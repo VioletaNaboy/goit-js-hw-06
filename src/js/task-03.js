@@ -13,7 +13,7 @@ const images = [
   },
 ];
 const markup = images
-  .map((image) => `<li><img class="item-img" src="${image.url}" alt="${image.alt}"></img></li>`)
+  .map((image) => `<li><img class="item-img" src="${image.url}" alt="${image.alt}"></li>`)
   .join("");
 const elGallery = document.querySelector(".gallery");
 elGallery.insertAdjacentHTML("afterbegin", markup);
